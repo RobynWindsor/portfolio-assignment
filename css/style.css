@@ -41,7 +41,7 @@ h2 {
   font-size: 20px;
 }
 
-ul.links {
+nav.links {
   list-style-type: none;
   margin: 0;
   padding: 5px;
@@ -212,7 +212,7 @@ a.git {
     padding-left: 40px;
     padding-right: 10px;
   }
-  ul {
+  nav {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
