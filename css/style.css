@@ -1,23 +1,284 @@
-* {
-  box-sizing: border-box;
+:root {
+  --primary-colour: #132743;
+  --secondary-colour: #6ff892;
+  --third-colour: #132743;
+  --fourth-colour: #e8630a;
+  --box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  --text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+  background-color: var(--primary-colour);
+  padding-bottom: 60px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--fourth-colour);
+  margin: 5px;
+  font-weight: 50;
+  padding-top: 35px;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 20px;
   margin: 0;
+  padding-top: 10px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+ul.links {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #6ff892;
+  border-radius: 5px;
+}
+
+li a {
+  float: right;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15px;
+  color: var(--third-colour);
+  padding: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+i {
+  font-size: 27px;
+  padding: 5px;
+  padding-top: 15px;
+  color: white;
 }
 
 p {
-  margin: 0;
+  color: #dde4ef;
+}
+section {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+a:hover {
+  color: var(--fourth-colour);
+  background-color: var(--third-colour);
+  transition: ease-in;
+  border-radius: 5px;
+}
+i:hover {
+  color: var(--fourth-colour);
+}
+
+.firstName {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--secondary-colour);
+  font-weight: 400;
+  font-size: 130px;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+.secondName {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--secondary-colour);
+  font-weight: 400;
+  font-size: 110px;
+  color: var(--fourth-colour);
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.icon {
+  color: var(--fourth-colour);
+  font-size: 20px;
+}
+i.fire {
+  color: var(--fourth-colour);
+}
+
+i.art {
+  color: #f8b400;
+}
+
+i.launch {
+  font-size: 15px;
+  color: #f8b400;
+}
+
+.highlight {
+  color: var(--secondary-colour);
+  font-weight: bold;
+}
+
+.emaiLink {
+  color: var(--fourth-colour);
+}
+.aboutMeLink {
+  color: var(--fourth-colour);
+  text-decoration: line-through var(--fourth-colour);
+  border-radius: 5px;
+}
+.projectsLink {
+  color: var(--fourth-colour);
+  text-decoration: line-through var(--fourth-colour);
+  border-radius: 5px;
+}
+.contactMeLink {
+  color: var(--fourth-colour);
+  text-decoration: line-through var(--fourth-colour);
+  border-radius: 5px;
+}
+
+.contactInfo {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+a.ld {
+  color: white;
+}
+
+a.iG {
+  color: white;
+}
+a.git {
+  color: white;
+}
+.contact {
+  text-align: center;
+}
+
+.img-fluid {
+  max-width: 90%;
+}
+
+.homeContact {
+  text-align: center;
+}
+
+.projectsIcons {
+  font-size: 17px;
+}
+
+.iconWorld {
+  color: var(--fourth-colour);
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    padding-bottom: 40px;
+    text-decoration: none;
+  }
+  .firstName {
+    text-align: center;
+    font-size: 200px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .secondName {
+    text-align: center;
+    font-size: 200px;
+    margin: auto 0;
+    padding: 5px;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+  }
+
+  .iconWorld {
+    padding-left: 40px;
+    padding-right: 10px;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  li a {
+    padding: 0 20px 0 20px;
+    font-size: 40px;
+  }
+  .aboutMeText {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    max-width: 50%;
+    margin: auto;
+  }
+
+  .contactMeText {
+    font-size: 20px;
+    font-size: 25px;
+    max-width: 50%;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .contactInfo {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 40px;
+    padding-top: 60px;
+  }
+
+  .iconLi {
+    font-size: 60px;
+  }
+
+  .london {
+    display: none;
+  }
+  .tools {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+
+  .art {
+    font-size: 35px;
+  }
+
+  .fire {
+    font-size: 35px;
+  }
+
+  i.launch {
+    font-size: 40px;
+  }
+
+  .weatherAppLink {
+    font-size: 30px;
+  }
+
+  .projectsIcons {
+    font-size: 35px;
+  }
+  i:hover {
+    color: var(--fourth-colour);
+  }
 }
